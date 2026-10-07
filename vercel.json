@@ -1,0 +1,21 @@
+{
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/nm-proxy",
+      "destination": "https://proxy.nullmask.io/"
+    },
+    {
+      "source": "/nm-proxy/:path*",
+      "destination": "https://proxy.nullmask.io/:path*"
+    },
+    {
+      "source": "/nm-guard",
+      "destination": "https://guard.nullmask.io/"
+    },
+    {
+      "source": "/nm-guard/:path*",
+      "destination": "https://guard.nullmask.io/:path*"
+    }
+  ]
+}

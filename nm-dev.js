@@ -1,9 +1,8 @@
-/* Reroute Nullmask API calls to the local proxy in serve.py. */
+/* Same-origin paths. vercel.json rewrites them to the Nullmask APIs. */
 (function () {
-  var proxyOrigin = "http://127.0.0.1:4173";
   var routes = [
-    ["https://proxy.nullmask.io", proxyOrigin + "/nm-proxy"],
-    ["https://guard.nullmask.io", proxyOrigin + "/nm-guard"],
+    ["https://proxy.nullmask.io", "/nm-proxy"],
+    ["https://guard.nullmask.io", "/nm-guard"],
   ];
 
   function rewrite(url) {
